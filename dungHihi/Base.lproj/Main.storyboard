@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NsT-w2-vs6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="2Qr-RL-ELD">
+            <objects>
+                <viewController id="NsT-w2-vs6" customClass="ViewController" customModule="dungHihi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IJs-TO-5ji">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Ix-NV-FGB">
+                                <rect key="frame" x="0.0" y="102" width="375" height="565"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="VXN-au-zIr">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VXN-au-zIr" id="71h-Nc-0jJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BOo-7V-kPz">
+                                <rect key="frame" x="114" y="42" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="clickChange:" destination="NsT-w2-vs6" eventType="valueChanged" id="u6M-Jt-Ppj"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPd-px-sxg">
+                                <rect key="frame" x="182" y="43" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clickConvert:" destination="NsT-w2-vs6" eventType="touchUpInside" id="v2e-HU-e5u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Ix-NV-FGB" firstAttribute="top" secondItem="omY-Ke-yhE" secondAttribute="top" constant="82" id="P5e-7T-R0T"/>
+                            <constraint firstItem="1Ix-NV-FGB" firstAttribute="leading" secondItem="omY-Ke-yhE" secondAttribute="leading" id="VZi-7p-H0F"/>
+                            <constraint firstItem="omY-Ke-yhE" firstAttribute="trailing" secondItem="1Ix-NV-FGB" secondAttribute="trailing" id="Xg3-yl-oAL"/>
+                            <constraint firstItem="omY-Ke-yhE" firstAttribute="bottom" secondItem="1Ix-NV-FGB" secondAttribute="bottom" id="xFg-ce-iHY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="omY-Ke-yhE"/>
+                    </view>
+                    <connections>
+                        <outlet property="myView" destination="1Ix-NV-FGB" id="t0e-1N-ljY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pGA-0E-2UD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-646" y="-310"/>
+        </scene>
+        <!--View Controller1-->
+        <scene sceneID="x7W-IU-647">
+            <objects>
+                <viewController id="wHs-aA-RDG" customClass="ViewController1" customModule="dungHihi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CTL-8J-EVo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TmW-Jf-Bp8">
+                                <rect key="frame" x="139" y="237" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="◎ Button"/>
+                                <state key="selected" title="◉ Button"/>
+                                <state key="highlighted" title="◎ Button"/>
+                                <connections>
+                                    <action selector="tappedBt:" destination="wHs-aA-RDG" eventType="touchUpInside" id="I55-y7-137"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvF-qs-de6">
+                                <rect key="frame" x="139" y="288" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="◎ Button"/>
+                                <state key="selected" title="◉ Button"/>
+                                <state key="highlighted" title="◎ Button"/>
+                                <connections>
+                                    <action selector="tappedBt:" destination="wHs-aA-RDG" eventType="touchUpInside" id="sb5-i5-eT2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="v22-Q8-1Qb"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="bt1" destination="TmW-Jf-Bp8" collectionClass="NSMutableArray" id="fC5-M0-a9C"/>
+                        <outletCollection property="bt1" destination="MvF-qs-de6" collectionClass="NSMutableArray" id="jTm-Nx-IMU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AK4-I7-gI8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="429.60000000000002" y="-425.03748125937034"/>
+        </scene>
+    </scenes>
+</document>
